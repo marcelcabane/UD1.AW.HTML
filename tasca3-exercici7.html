@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Taula B. Resultat</title>
+
+<style>
+    body {
+        font-family: "Times New Roman";
+        font-size: 12px;
+    }
+
+    table {
+        width: 100%;
+        border: 1px solid gray;
+        border-spacing: 2px;
+    }
+
+    td {
+        border: 1px solid white;
+        padding: 3px;
+    }
+
+    .formulari {
+        background-color: blue;
+        text-align: center;
+        height: 145px;
+        width: 32%;
+        vertical-align: top;
+    }
+
+    .groc {
+        background-color: yellow;
+        text-align: center;
+        height: 100px;
+        vertical-align: top;
+    }
+
+    .vermell {
+        background-color: red;
+        height: 45px;
+    }
+
+    .gris {
+        background-color: gray;
+        text-align: right;
+        height: 25px;
+    }
+
+    .rosa {
+        background-color: #ff0055;
+        height: 95px;
+        vertical-align: top;
+    }
+
+    .verd {
+        background-color: #00ed50;
+        height: 95px;
+        vertical-align: middle;
+    }
+
+    .lila {
+        background-color: #5000ff;
+        text-align: center;
+        height: 65px;
+    }
+
+    .final {
+        background-color: #b0c4d1;
+        text-align: center;
+    }
+
+    .mini {
+        border-collapse: collapse;
+        width: auto;
+        margin: auto;
+        font-size: 11px;
+    }
+
+    .mini td {
+        border: 1px solid black;
+        padding: 2px;
+    }
+
+    input {
+        width: 85px;
+        height: 12px;
+        font-size: 10px;
+    }
+
+    select {
+        font-size: 10px;
+    }
+
+    button {
+        font-size: 10px;
+    }
+
+    .codi {
+        background-color: #222;
+        color: white;
+        width: 105px;
+        height: 40px;
+        margin: auto;
+        font-family: monospace;
+        font-size: 6px;
+        text-align: left;
+        overflow: hidden;
+    }
+</style>
+
+</head>
+
+<body>
+
+<table>
+
+    <caption>Taula B. Resultat</caption>
+
+    <tr>
+
+        <!-- FORMULARI -->
+
+        <td class="formulari" rowspan="3">
+
+            <h3>Formulari</h3>
+
+            Nom:
+            <input type="text" />
+            <br />
+
+            P.:
+            <input type="password" />
+            <br /><br />
+
+            SQR:
+            <br />
+
+            Professió:
+            <input type="radio" name="professio" /> Estudiant
+            <input type="radio" name="professio" /> Treball
+            <br />
+
+            Estat Civil:
+            <input type="radio" name="estat" /> Sí
+            <input type="radio" name="estat" /> No
+            <br />
+
+            Edat:
+            <select>
+                <option>Entre 16 i 20</option>
+                <option>Entre 21 i 30</option>
+                <option>Entre 31 i 40</option>
+            </select>
+
+            <br /><br />
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+
+        </td>
+
+        <!-- ESTILS DE LLETRES -->
+
+        <td class="vermell" colspan="2">
+
+            <h3>Aquí provar tots els estils de lletres</h3>
+
+            <b>Negreta</b>
+            <i>Itàlica</i>
+            <u>marcada</u>
+            <del>Destacada</del>
+            <em>"Entre comes"</em>
+            Lletra petita
+            <strong>Remarcada</strong>
+            <big>llegeix</big>
+            -1, m<sup>2</sup>
+
+        </td>
+
+    </tr>
+
+    <!-- ENLLAÇOS -->
+
+    <tr>
+
+        <td class="gris" colspan="2">
+
+            <h3>Aquí provar tots els tipus d'enllaços</h3>
+
+            <a href="#menu">Tornar al menu</a> |
+            <a href="tasca3-exercici6.html">Tornar a la Taula A. Estructura</a> |
+            <a href="https://www.google.com" target="_blank">Google</a> |
+            <a href="https://www.google.com/calendar" target="_blank">Calendari</a>
+
+        </td>
+
+    </tr>
+
+    <!-- LLISTES -->
+
+    <tr>
+
+        <td class="rosa">
+
+            <h3>Exemple de llistes ordenades</h3>
+
+            <ol>
+                <li>Aplicacions Web</li>
+                <li>Sistemes operatius en xarxa</li>
+                <li>Seguretat</li>
+                <li>Bases de dades</li>
+            </ol>
+
+        </td>
+
+        <td class="verd">
+
+            <h3>Exemple de llistes desordenades</h3>
+
+            <ul>
+                <li>Aplicacions Web</li>
+                <li>Sistemes operatius en xarxa</li>
+                <li>Seguretat</li>
+                <li>Bases de dades</li>
+            </ul>
+
+        </td>
+
+    </tr>
+
+    <!-- TAULA I IMATGE -->
+
+    <tr>
+
+        <td class="groc">
+
+            <h3>Inserirem un altre taula</h3>
+
+            <p>Taula<br />Prova</p>
+
+            <table class="mini">
+                <tr>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>C</td>
+                    <td>D</td>
+                </tr>
+
+                <tr>
+                    <td>E</td>
+                    <td></td>
+                    <td>F</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>H</td>
+                    <td>I</td>
+                    <td>G</td>
+                    <td>J</td>
+                </tr>
+            </table>
+
+        </td>
+
+        <td class="lila" colspan="2">
+
+            <h3>Imatge</h3>
+
+            <div class="codi">
+                &lt;html&gt;<br />
+                &lt;head&gt;<br />
+                &lt;title&gt;Web&lt;/title&gt;<br />
+                &lt;/head&gt;<br />
+                &lt;body&gt;<br />
+                &lt;h1&gt;Hola&lt;/h1&gt;<br />
+                &lt;/body&gt;<br />
+                &lt;/html&gt;
+            </div>
+
+        </td>
+
+    </tr>
+
+    <!-- CODI FONT -->
+
+    <tr>
+
+        <td class="final" colspan="3">
+
+            <h3>Aquí hi anirà el codi font</h3>
+
+            <pre>
+
+function comprovar() { if (document.form1.nom.value=="") {alert("Això no potser!"); return 0;} }
+</pre>
+
+        </td>
+
+    </tr>
+
+</table>
+
+</body>
+</html>
